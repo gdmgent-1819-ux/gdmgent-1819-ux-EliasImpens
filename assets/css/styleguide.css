@@ -1,17 +1,196 @@
-.sg-title {
-    font-size: 1.7rem;
-    font-weight: 400;
-    color: #333;
-    margin: 1rem 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+@import url(variables.css);
+@import url(components/grid.css);
+
+body {
+    background-color: #444;
 }
 
-.sg-subtitle {
-    font-size: 1rem;
-    border-bottom: solid 1px #aaa;
-    font-weight: 400;
-    color: #666;
-    text-transform: uppercase;
-    margin: 2rem 0 .5rem 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+h1 {
+    color: white;
+    font-family: var(--f-title);
+    font-size: var(--fs-large);
+    margin-bottom: 0;
+}
+
+h2 {
+    color: var(--c-secondary);
+    font-family: var(--f-title);
+    font-size: 33px;
+}
+
+.alt {
+    font-family: var(--f-header);
+    font-size: var(--fs-medium);
+}
+
+p {
+    font-family: var(--f-body);
+    font-size: var(--fs-small);
+}
+
+.bigbutton {
+    background-image: url('../images/stock/Sfeerbeeld\ 2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 0px 6px 12px -4px rgba(0, 0, 0, 0.75);
+    height: 435px;
+    transition: filter 0.4s ease-in-out;
+}
+
+.button {
+    color: white;
+
+}
+
+.desc {
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.atomcontainer {
+    background-color: #888;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+.buttontext {
+    text-align: center;
+    line-height: 300px;
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    font-family: var(--f-header);
+    font-size: var(--fs-medium);
+}
+
+.button {
+    color: white;
+    font-family: var(--f-body);
+    background-color: var(--c-oranje);
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in-out;
+    box-shadow: 0px 6px 12px -4px rgba(0, 0, 0, 0.75);
+    margin-top: 200px;
+}
+
+.highlight {
+    color: white;
+}
+
+.highlightcontainer {
+    width: 350px;
+    height: auto;
+    background-color: var(--c-oranje);
+    color: white;
+    padding: 33px 40px;
+    border-radius: 0;
+}
+
+.promocard {
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 412px;
+}
+
+.promo {
+    background-image: url('../images/stock/Pasen.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    border-radius: 0;
+    height: 229px;
+    margin-top: 30px;
+    width: 352px;
+}
+
+header {
+    background-color: #C87100;
+    color: white;
+    height: 175px;
+    position: relative;
+    width: 100vw;
+}
+
+#title {
+    margin-bottom: 20px;
+    margin-top: 29px;
+    position: relative;
+    text-align: center;
+}
+
+#language {
+    color: white;
+    font-family: var(--f-header);
+    font-size: 19px;
+    position: absolute;
+    right: 144px;
+    text-decoration: none;
+    top: 30px;
+}
+
+.nav {
+    margin: 0 auto;
+    width: 1139px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--c-oranje);
+    border-radius: 0;
+    padding: 0;
+}
+
+.nav>a {
+    font-size: var(--fs-medium);
+    color: white;
+    padding: 5px;
+    font-family: 'Roboto Slab', sans-serif;
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--c-oranje);
+    width: 100vw;
+    height: 232px;
+    border-radius: 0;
+    padding: 0;
+}
+
+.footercontent {
+    color: white;
+}
+
+.footercontent p {
+    margin: 0 0 5px 0;
+}
+
+.footercontent h2 {
+    color: white;
+    margin: 26px 0 8px 0;
+}
+
+footer .container {
+    max-width: 1000px;
+    border-radius: 0;
+    padding: 0;
+    background-color: var(--c-oranje);
+}
+
+footer .row,
+footer .col {
+    background-color: var(--c-oranje);
+}
+
+i {
+    color: white;
+    margin: 2px;
+    transition: color 0.4s ease-in-out;
 }
