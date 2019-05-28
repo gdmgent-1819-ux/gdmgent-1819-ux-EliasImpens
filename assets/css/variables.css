@@ -1,26 +1,25 @@
-
 :root {
-  /**
-   * Colour palette
-   */
-  --c-primary: hsl(190, 100%, 40%);
+    /* Colors */
+    --c-oranje: #C87100 ;
+    --c-blauw: hsla(223, 61%, 55%, 1);
+    --c-zwart: #000;
+    --c-donkerblauw: rgb(54, 84, 160);
+    --c-donkeroranje: rgb(151, 86, 0);
 
-  /**
-   * Layout
-   */
-  --l-gutter: 1rem;
+    --c-primary: var(--c-oranje);
+    --c-secondary: var(--c-blauw);
+    --c-ternary: var(--c-zwart);
 
-  /**
-   * Typography
-   */
-  --t-primary: Arial, Helvetica, sans-serif;
-  --t-secondary: Arial, Helvetica, sans-serif;
-  --t-tertiary: monospace;
+    /* Fonts */
+    --f-body: 'Roboto';
+    --f-title: 'Lobster';
+    --f-header: 'Roboto Slab';
 
-  --t-headline: var(--t-primary);
-  --t-subtitle: var(--t-primary);
-  --t-body: var(--t-secondary);
-  --t-code: var(--t-tertiary);
+    --unit: .5rem;
+
+    /* Font Sizes */
+
+    --fs-large: 79px;
+    --fs-medium: 24px;
+    --fs-small: 15px;
 }
-
-
