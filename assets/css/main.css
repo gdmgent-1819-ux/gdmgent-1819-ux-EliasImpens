@@ -1,9 +1,197 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url(variables.css);
+@import url(components/grid.css);
 
-@import url('variables.css');
-@import url('base.css');
+body {
+    font-family: var(--f-body);
+}
 
-@import url('components/flex-grid.css');
-@import url('components/buttons.css');
-@import url('components/forms.css');
+/* HEADER DATA */
+header {
+    background-color: #C87100;
+    width: 100vw;
+    height: 175px;
+    color: white;
+}
 
+.container {
+    margin-top: 26px;
+}
+
+h1 {
+    font-family: var(--f-title);
+    font-size: var(--fs-large);
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+#title {
+    position: relative;
+    text-align: center;
+    margin-top: 29px;
+    margin-bottom: 20px;
+}
+
+#language {
+    font-family: var(--f-header);
+    font-size: 19px;
+    color: white;
+    position: absolute;
+    top: 30px;
+    right: 144px;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: var(--f-title);
+    color: var(--c-secondary);
+    font-size: 33px;
+    margin-top: -15px;
+}
+
+.nav {
+    margin: 0 auto;
+    width: 1139px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav>a {
+    font-size: var(--fs-medium);
+    color: white;
+    padding: 5px;
+    font-family: 'Roboto Slab', sans-serif;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.nav>a:hover {
+    background-color: var(--c-donkeroranje);
+}
+
+/* MAIN */
+div[class^='col'] {}
+
+.col-5 {
+    background-color: var(--c-blauw);
+}
+
+.col-7 {
+    background-color: var(--c-oranje);
+}
+
+img {
+    max-width: 300%;
+    max-height: 100%;
+}
+
+p {
+    font-family: var(--f-body);
+    font-size: var(--fs-small);
+}
+
+.text {
+    margin-bottom: 30px;
+}
+
+.buttontext {
+    text-align: center;
+    color: white;
+    line-height: 300px;
+    text-decoration: none;
+}
+
+.button {
+    color: white;
+    background-color: var(--c-oranje);
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in-out;
+    box-shadow: 0px 6px 12px -4px rgba(0, 0, 0, 0.75);
+    margin-top: 200px;
+}
+
+.button:hover {
+    background-color: var(--c-donkeroranje);
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+.bigbutton {
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 6px 12px -4px rgba(0, 0, 0, 0.75);
+    transition: filter 0.4s ease-in-out;
+}
+
+.bigbutton:hover {
+    filter: brightness(120%);
+}
+
+/* IMAGERY */
+.intro {
+    background-image: url('../images/stock/Sfeerbeeld\ 6.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.verblijf {
+    background-image: url('../images/stock/Sfeerbeeld\ 2.jpg');
+}
+
+.restaurant {
+    background-image: url('../images/stock/Barbecue.jpg');
+}
+
+.activiteiten {
+    background-image: url('../images/stock/Paardrijden.jpg');
+    background-size: 130%;
+}
+
+.promoties {
+    background-image: url('../images/stock/Sfeerbeeld\ 3.jpg');
+    background-size: 130%;
+}
+
+.reserveren {
+    background-image: url('../images/stock/Saloon.jpg');
+}
+
+/* FOOTER DATA */
+footer {
+    background-color: var(--c-oranje);
+    width: 100vw;
+    height: 232px;
+}
+
+.footercontent {
+    color: white;
+}
+
+.footercontent p {
+    margin: 0 0 5px 0;
+}
+
+.footercontent h2 {
+    color: white;
+    margin: 26px 0 8px 0;
+}
+
+footer .container {
+    max-width: 1000px;
+}
+
+i {
+    color: white;
+    margin: 2px;
+    transition: color 0.4s ease-in-out;
+}
+
+i:hover {
+    color: var(--c-blauw);
+}
