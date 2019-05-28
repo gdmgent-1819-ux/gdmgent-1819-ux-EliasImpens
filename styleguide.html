@@ -1,21 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href='assets/css/variables.css' rel='stylesheet'>
+    <link href='assets/css/components/grid.css' rel='stylesheet'>
+    <link rel='stylesheet' href='assets/css/styleguide.css'>
     <title>Styleguide</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/styleguide.css">
 </head>
+
 <body>
-<div class="container">
-    <h1 class="sg-title">Digital styleguide</h1>
-    <h2 class="sg-subtitle">Kleuren</h2>
-    <h2 class="sg-subtitle">Typografie</h2>
-    <h2 class="sg-subtitle">Knopppen</h2>
-    <h2 class="sg-subtitle">Formulier</h2>
-    <h2 class="sg-subtitle">Componenten</h2>
-</div>
+    <h1 class='title'> Styleguide Eindopdracht UX</h1>
+    <h1 class='title'>ATOMS</h1>
+    <div class='atomcontainer'>
+        <p class='desc'>h1</p>
+        <h1>Yiihaa!</h1>
+    </div>
+    <div class='atomcontainer'>
+        <p class='desc'>h2</p>
+        <h2>Yiihaa, partner!</h2>
+        <p class='desc'>h2 - alternative (wordt gebruikt op andere pagina's)</p>
+        <h2 class='alt'>Yiihaa, partner!</h2>
+    </div>
+    <div class='atomcontainer'>
+        <p class='desc'>p</p>
+        <p>Welkom op het tofste vakantiedomein in heel Vlaanderen! Op zoek naar de ideale plek om de wereld <br>van het
+            Wilde Westen met je jeugdbeweging te ontdekken? Dan zit je hier goed. Hier nog wat meer introductie over het
+            kamp...</p>
+    </div>
+    <h1 class='title'>MOLECULES</h1>
+    <div class='atomcontainer'>
+        <p class='desc'>big button</p>
+        <div class='col bigbutton'>
+            <a href='#'>
+                <h1 class='buttontext'>Verblijf</h1>
+            </a>
+        </div>
+    </div>
+    <div class='atomcontainer'>
+        <p class='desc'>small button</p>
+        <a href='#' class='button'>Klik hier om te reserveren!</a>
+    </div>
+    <div class='atomcontainer'>
+        <p class='desc'>info highlight</p>
+        <div class='highlightcontainer'>
+            <h2 class='alt highlight'>Openingsuren</h2>
+            <p>
+                Maandag-donderdag: 12:00-14:00 / 18:00-20:30 <br>
+                Vrijdag: 12:00-14:30 / 18:30-21:00* <br>
+                Weekend: 12:00-14:00 / 19:00-22:00
+            </p>
+            <p>*Wij bieden geen barbecue aan op vrijdag.</p>
+        </div>
+    </div>
+    <div class='atomcontainer'>
+        <p class='desc'>promo card</p>
+        <div class='promocard'>
+            <div class='promo' src='./assets/images/stock/Pasen.jpg'></div>
+            <h2 class='alt'>Fijn Pasen!</h2>
+            <p>Het is paasvakantie! Alle activiteiten (behalve het bezoek aan Plopsaland) krijgen een korting van 30%!
+                <br>
+                <strong>Geldig van 20/04 t.e.m. 2/05.</strong></p>
+        </div>
+    </div>
+    <h1 class='title'>ORGANISMS</h1>
+    <div class='atomcontainer'>
+        <p class='desc'>header</p>
+        <header>
+            <h1 id='title'>Yiihaa!</h1>
+            <a href='#' id='language'>NL | FR | EN</a>
+            <div class='nav'>
+                <a href='#'>Verblijf</a>
+                <a href='#'>Restaurant</a>
+                <a href='#'>Activiteiten</a>
+                <a href='#'>Promoties</a>
+                <a href='#'>Reserveren</a>
+                <a href='#'>Contact</a>
+            </div>
+        </header>
+    </div>
+    <div class='atomcontainer'>
+        <p class='desc'>footer</p>
+        <footer>
+            <div class='container'>
+                <div class='row'>
+                    <div class="col-4 footercontent">
+                        <h2>Contact</h2>
+                        <p>Elias Impens</p>
+                        <p>0493 64 91 85</p>
+                        <p>Ditismijnstraat 69</p>
+                        <p>1337 Mijngemeente</p>
+                    </div>
+                    <div class="col-4 footercontent">
+                        <h2>Volg ons</h2>
+                        <div>
+                            <a href='#'><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href='#'><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href='#'><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                        <div>
+                            <a href='#'><i class="fab fa-pinterest fa-2x"></i></a>
+                            <a href='#'><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4 footercontent">
+                        <h2>Betaalmogelijkheden</h2>
+                        <a href='#'><i class="fab fa-paypal fa-2x"></i></a>
+                        <a href='#'><i class="fab fa-cc-visa fa-2x"></i></a>
+                        <a href='#'><i class="fab fa-cc-mastercard fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
